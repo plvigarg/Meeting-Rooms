@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Dashboard
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
+
+</head>
+
+<body class="" style="overflow-x: hidden;background-color:#f4f3ef;">
+    <div style="height: auto;" >
+      <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent" style="height: 10%;">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-start" id="navigation">
+              <span  style="font-family:Montserrat, Helvetica Neue, Arial, sans-serif; font-size: 20px;">Zeus Fly</span>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation" style="margin-right: 5%;">
+              <span  style="font-family:Montserrat, Helvetica Neue, Arial, sans-serif; font-size: 27px;">Meeting Room Booking</span>
+            </div>
+            <!-- <div class="collapse navbar-collapse justify-content-end" id="navigation"> -->
+              <!-- <span  style="font-family:cursive; font-size: 20px;">Hi User</span> -->
+            <!-- </div> -->
+          </div>
+        </nav>
+      <br>
+      <br>
+
+      <!-- End Navbar -->
+      <div class="container"  style="margin-top: 4%;">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-img-overlay">
+              <div class="card-body">
+                  <!-- <img src="../assets/img/r1.jfif" alt="...">
+                  <br>
+                  <img src="../assets/img/r2.jfif" alt="...">
+                  <br>
+                  <img src="../assets/img/r3.jfif" alt="..."> -->
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">My Requests</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row">31 Jan 2022</td>
+                        <td>
+                          <button type="submit" class="btn btn-round btn-secondary">cancel</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row">15 Jan 2022</td>
+                        <td>
+                          <button type="submit" class="btn btn-round btn-secondary" disabled>cancel</button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row">3 Jan 2022</td>
+                        <td>
+                          <button type="submit" class="btn btn-round btn-secondary" disabled>cancel</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card card-user">
+              <div class="card-header">
+                <h5 class="card-title">Request Meeting Room</h5>
+              </div>
+              <br>
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6 pr-1">
+                      <div class="form-group">
+                        <label>Enter Capacity Requirements</label>
+                        <!-- <input type="text" class="form-control" placeholder="Username" value="michael23"> -->
+                        <input type="number" class="form-control" required placeholder="0" min="3" max="30">
+                      </div>
+                    </div>
+                    <div class="col-md-6 pl-1">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Enter Date</label>
+                        <input type="date" class="form-control" placeholder="Email" required>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6 pr-1">
+                      <div class="form-group">
+                        <label>In Time</label>
+                        <input class="form-control" type="time" name="in-time" min="08:00" max="17:00" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6 pl-1">
+                      <div class="form-group">
+                        <label>Out Time</label>
+                        <input class="form-control" type="time" name="out-time" max="19:00" required>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Refreshment</label>
+                        <input type="text" class="form-control" placeholder="Home Address" value="Bottles" disabled>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label for="">Qty</label>
+                        <input type="number" class="form-control" placeholder="City" value="0" min="0" max="30">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Refreshment</label>
+                        <input type="text" class="form-control" placeholder="Home Address" value="Tea" disabled>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label for="">Qty</label>
+                        <input type="number" class="form-control" placeholder="City" value="0" min="0" max="30">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Refreshment</label>
+                        <input type="text" class="form-control" placeholder="Home Address" value="Snacks" disabled>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label for="">Qty</label>
+                        <input type="number" class="form-control" placeholder="City" value="0">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Refreshment</label>
+                        <input type="text" class="form-control" placeholder="Home Address" value="Meal" disabled>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label for="">Qty</label>
+                        <input type="number" class="form-control" placeholder="City" value="0" min="0" max="30">
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="update ml-auto mr-auto">
+                      <button type="submit" class="btn btn-primary btn-round">Submit Request</button>
+                    </div>
+                  </div>
+                </form>
+                <br>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <footer class="footer" style="position: absolute; bottom: 0; width: -webkit-fill-available;">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="credits ml-auto">
+              <span class="copyright">
+                © 2020, made with <i class="fa fa-heart heart"></i> by Creative Tim
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer> -->
+    </div>
+  
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script>
+</body>
+
+</html>
